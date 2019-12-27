@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Zihao Yang&#39;s homepage">
 <meta property="og:description" content="This article introduces the derivation of dispersion relations of MHD waves in coronal cylindrical flux tubes.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-27T09:16:14.666Z">
+<meta property="og:updated_time" content="2019-12-27T09:20:44.798Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Dispersion Realtions For MHD Waves in Cylindrical Flux Tubes">
 <meta name="twitter:description" content="This article introduces the derivation of dispersion relations of MHD waves in coronal cylindrical flux tubes.">
@@ -366,49 +366,34 @@
 <h2 id="further-derivations">Further Derivations</h2>
 <p><span class="math inline">\(\dfrac{\partial}{\partial t}(5)\)</span> gives <span class="math display">\[\begin{equation}
         \rho_0\frac{\partial^2\mathbf{v}_1}{\partial t^2}+\nabla\cdot(\frac{\partial p_T}{\partial t})-\frac{1}{\mu_0}(\mathbf{B}_0\cdot\frac{\partial^2\mathbf{B}_1}{\partial z\partial t})=0
-    \end{equation}\]</span> Combine Eq. (6) and Eq. (8) and know that local Alfv{'e}n speed <span class="math inline">\(v_A=\frac{B}{\sqrt{\mu_0\rho}}\)</span>:</p>
-<pre><code>\begin{equation}
+    \end{equation}\]</span> Combine Eq. (6) and Eq. (8) and know that local Alfv{'e}n speed <span class="math inline">\(v_A=\frac{B}{\sqrt{\mu_0\rho}}\)</span>: <span class="math display">\[\begin{equation}
     \frac{\partial^2\mathbf{v}_1}{\partial t^2}+\frac{\nabla}{\rho_0}\cdot\frac{\partial p_T}{\partial t}-v_A^2(\frac{\partial^2\mathbf{v}_1}{\partial z^2}-\mathbf{e}_z\nabla\cdot\mathbf{v}_1)=0
-\end{equation}
-
-Take the divergence of the z-component of Eq. (8) (the last two terms in Eq. (8) will cancel):
-\begin{equation}
+\end{equation}\]</span></p>
+<p>Take the divergence of the z-component of Eq. (8) (the last two terms in Eq. (8) will cancel): <span class="math display">\[\begin{equation}
     \frac{\partial^2}{\partial t^2}(\nabla\cdot \mathbf{v}_1)+\frac{1}{\rho_0}\nabla^2(\frac{\partial p_T}{\partial t})=0
-\end{equation}
-From the r-component of Eq. (9) we get:
-\begin{equation}
+\end{equation}\]</span></p>
+<p>From the r-component of Eq. (9) we get: <span class="math display">\[\begin{equation}
     \rho_0\frac{\partial^2 v_r}{\partial t^2}-\rho_0v_A^2\frac{\partial^2v_r}{\partial z^2}+\frac{\partial^2}{\partial r^2}\frac{\partial p_T}{\partial t}=0
-\end{equation}
-
-$\dfrac{\partial}{\partial t}(7)$ gives 
-\begin{equation}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\dfrac{\partial}{\partial t}(7)\)</span> gives <span class="math display">\[\begin{equation}
     \frac{\partial^2\mathbf{v}_1}{\partial t^2}=c_s^2\nabla(\nabla\cdot\mathbf{v}_1)+v_A^2[-\nabla(\frac{\partial v_z}{\partial z}-\nabla\mathbf{v}_1)+\frac{\partial}{\partial z}(\frac{\partial\mathbf{v}_1}{\partial z}-\mathbf{e}_z\nabla\cdot\mathbf{v}_1)]
-\end{equation}
-Set $\Delta=\nabla\cdot\mathbf{v}_1$ and $\Gamma=\frac{\partial v_z}{\partial z}$, the z-component and divergence of Eq. (7) give:
-\begin{equation}
+\end{equation}\]</span></p>
+<p>Set <span class="math inline">\(\Delta=\nabla\cdot\mathbf{v}_1\)</span> and <span class="math inline">\(\Gamma=\frac{\partial v_z}{\partial z}\)</span>, the z-component and divergence of Eq. (7) give: <span class="math display">\[\begin{equation}
     \frac{\partial^2 v_z}{\partial t^2}=c_s^2\frac{\partial\Delta}{\partial z}
-\end{equation}
-\begin{equation}
+\end{equation}\]</span> <span class="math display">\[\begin{equation}
     \frac{\partial^2\Delta}{\partial t^2}=(c_s^2+v_A^2)\nabla^2\Delta-v_A^2\nabla^2\Gamma=0
-\end{equation}
-
-Suppose both $p_T$ and $\Delta$ have the form of $R(r)exp(i\omega t+in\theta+ikz)$:
-\begin{equation}
+\end{equation}\]</span></p>
+<p>Suppose both <span class="math inline">\(p_T\)</span> and <span class="math inline">\(\Delta\)</span> have the form of <span class="math inline">\(R(r)exp(i\omega t+in\theta+ikz)\)</span>: <span class="math display">\[\begin{equation}
     p_T=-\frac{i\rho_0\omega}{k^2}\Delta+C
-\end{equation}
-$C$ is a constant.
-
-Eqs. (13) and (14) can be combined to be:
-\begin{equation}
+\end{equation}\]</span> <span class="math inline">\(C\)</span> is a constant.</p>
+<p>Eqs. (13) and (14) can be combined to be: <span class="math display">\[\begin{equation}
     \frac{\partial^4\Delta}{\partial t^4}-(c_s^2+v_A^2)\frac{\partial^2}{\partial t^2}\nabla^2\Delta+c_s^2v_A^2=0
-\end{equation}
-Take the form $\Delta=R(r)exp(i\omega t+in\theta+ikz)$ into Eq. (16):
-\begin{equation}
+\end{equation}\]</span></p>
+<p>Take the form <span class="math inline">\(\Delta=R(r)exp(i\omega t+in\theta+ikz)\)</span> into Eq. (16): <span class="math display">\[\begin{equation}
     \frac{d^2R(r)}{dr^2}+\frac{1}{r}\frac{dR(r)}{dr}-[\frac{n^2}{r^2}+k^2-\frac{\omega^4}{(c_s^2+v_A^2)\omega^2-k^2c_s^2v_A^2}]R(r)=0
-\end{equation}
-Set $m^2=k^2-\dfrac{\omega^4}{(c_s^2+v_A^2)\omega^2-k^2c_s^2v_A^2}=\dfrac{(k^2c_s^2-\omega^2)(k^2v_A^2-\omega^2)}{(c_s^2+v_A^2)(k^2c_T^2-\omega^2)}$,
-
-    and $c_T=\dfrac{c_s v_A}{\sqrt{c_s^2+v_A^2}}$ is the so-called \textit{tube speed}.</code></pre>
+\end{equation}\]</span></p>
+<p>Set <span class="math inline">\(m^2=k^2-\dfrac{\omega^4}{(c_s^2+v_A^2)\omega^2-k^2c_s^2v_A^2}=\dfrac{(k^2c_s^2-\omega^2)(k^2v_A^2-\omega^2)}{(c_s^2+v_A^2)(k^2c_T^2-\omega^2)}\)</span>,</p>
+<p>and <span class="math inline">\(c_T=\dfrac{c_s v_A}{\sqrt{c_s^2+v_A^2}}\)</span> is the so-called .</p>
 <h2 id="dispersion-relation-of-compressible-waves">Dispersion Relation of compressible waves</h2>
 <p>Eq. (17) is a modified Bessel equation, and its solution is modified Bessel functions.</p>
 <h3 id="modified-bessel-equation">Modified Bessel Equation</h3>
