@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Zihao Yang&#39;s homepage">
 <meta property="og:description" content="This article introduces the derivation of dispersion relations of MHD waves in coronal cylindrical flux tubes.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-27T09:34:17.829Z">
+<meta property="og:updated_time" content="2019-12-27T09:35:43.130Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Dispersion Realtions For MHD Waves in Cylindrical Flux Tubes">
 <meta name="twitter:description" content="This article introduces the derivation of dispersion relations of MHD waves in coronal cylindrical flux tubes.">
@@ -341,17 +341,13 @@
 <p>We start with the ideal MHD equations, assuming small perturbations for each physical parameter, and combining the equations to get a differential equation containing the parameter to be solved. Then by utilizing the boundary conditions inside and outside of the cylindrical flux tube, the solution to the differential equation can be obtained.</p>
 <p>In the following sections, we will treat the problem in cylindrical coordinate (the three base vectors are <span class="math inline">\(\mathbf{e_r},\ \mathbf{e_{\theta}}\)</span> and <span class="math inline">\(\mathbf{e_z}\)</span>). We assume the radius of the cylinder as <span class="math inline">\(r=a\)</span>, and the two typical speeds used during the derivation are  <span class="math inline">\(c_{s,i}\)</span> and  <span class="math inline">\(v_{A,i}\)</span>. The index <span class="math inline">\(i=o,\ e\)</span> represents parameters in the interior and exterior regions, respectively.</p>
 <h2 id="basic-mhd-equations">Basic MHD Equations</h2>
-<p>The initial equations are ideal MHD equations (ignoring collisions and viscosity): <span class="math display">\[
-\begin{equation}
+<p>The initial equations are ideal MHD equations (ignoring collisions and viscosity): <span class="math display">\[\begin{equation}
     \frac{\partial\rho}{\partial t}+\nabla\cdot(\rho \mathbf{v})=0
-\end{equation}
-\begin{equation}
+\end{equation}\]</span> <span class="math display">\[\begin{equation}
     \rho\frac{\partial\mathbf{v}}{\partial t}+\mathbf{v}\cdot\nabla\mathbf{v}+\nabla p+\rho g+\frac{1}{\mu_0}[(\nabla\times \mathbf{B})\times\mathbf{B}]=0
-\end{equation}
-\begin{equation}
+\end{equation}\]</span> <span class="math display">\[\begin{equation}
     \nabla\times(\mathbf{v}\times\mathbf{B})-\frac{\partial\mathbf{B}}{\partial t}=0
-\end{equation}
-\]</span></p>
+\end{equation}\]</span></p>
 <h2 id="the-introduction-of-small-perturbations">The Introduction of Small Perturbations</h2>
 <p>Assume a small perturbation in the parameters:</p>
 <p><span class="math inline">\(\rho=\rho_0+\rho_1,\quad p=p_0+p_1,\quad \mathbf{v}=\mathbf{v_1},\quad \mathbf{B}=\mathbf{B}_0+\mathbf{B}_1\)</span>,</p>
@@ -850,9 +846,10 @@ In conclusion, we have two forms of dispersion relation:
           inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
           processEscapes: true,
           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
+        },
+        TeX: {equationNumbers: { autoNumber: "AMS" }}
       });
-    </script>
+</script>
 
     <script type="text/x-mathjax-config">
       MathJax.Hub.Queue(function() {
